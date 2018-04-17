@@ -2,7 +2,7 @@
   "name": "nuxt-firebase-playground",
   "version": "0.0.1",
   "description": "Nuxt.js project",
-  "author": "kazu69 <kazu69web@gmail.com>",
+  "author": "kazu69",
   "private": true,
   "scripts": {
     "dev": "nuxt",
