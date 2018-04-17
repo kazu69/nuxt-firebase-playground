@@ -1,0 +1,30 @@
+{
+  "name": "nuxt-firebase-playground",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cd src && npm run dev",
+    "serve": "firebase serve --only functions,hosting",
+    "copyassets": "cp -R public/functions/nuxt/dist/ public/hosting/assets",
+    "copystatic": "cp -R src/static/* public/hosting/",
+    "deploy": "firebase deploy",
+    "clean": "rm -rf public/hosting/assets/* && rm -rf public/functions/nuxt/*",
+    "setup:client": "cd src && npm install",
+    "setup:server": "cd public/functions && npm install",
+    "setup": "npm run setup:client && npm run setup:server",
+    "prebuild:nuxt": "npm run clean",
+    "build:nuxt": "cd src && npm run build",
+    "postbuild:nuxt": "npm run copyassets && npm run copystatic"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "vue-cli": "^2.9.3"
+  },
+  "dependencies": {
+    "firebase": "^4.12.1",
+    "firebase-functions": "^1.0.1"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "hosting": {
+    "public": "public/hosting",
+    "rewrites": [
+      {
+        "source": "**",
+        "function": "nuxtssr"
+      }
+    ],
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  },
+  "functions": {
+    "source": "public/functions"
+  }
+}
