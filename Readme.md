@@ -1,5 +1,7 @@
 # Nuxt.js on Firebase Playground
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/kazu69/nuxt-firebase-playground.svg)](https://greenkeeper.io/)
+
 It is a playground for enjoying and enjoying the function of Nuxt.js :lollipop:
 
 ---
